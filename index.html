@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Where the Code Binds</title>
+<meta name="description" content="An annotated inventory of building-code and zoning reform targets for traditional architecture, sorted by what is actually movable.">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://legaltobuildbeautiful.com/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Legal to Build Beautiful">
+<meta property="og:title" content="Where the Code Binds">
+<meta property="og:description" content="An annotated inventory of building-code and zoning reform targets for traditional architecture, sorted by what is actually movable.">
+<meta property="og:url" content="https://legaltobuildbeautiful.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Where the Code Binds">
+<meta name="twitter:description" content="An annotated inventory of building-code and zoning reform targets for traditional architecture, sorted by what is actually movable.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232C6355'/%3E%3Cg fill='%23F1F2EF'%3E%3Crect x='5' y='24' width='22' height='3'/%3E%3Crect x='7' y='11' width='3' height='12'/%3E%3Crect x='12.5' y='11' width='3' height='12'/%3E%3Crect x='18' y='11' width='3' height='12'/%3E%3Crect x='23.5' y='11' width='3' height='12'/%3E%3Cpath d='M16 4 L29 10 L3 10 Z'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root{
+    color-scheme:light dark;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+
+    --ground:#F1F2EF;
+    --surface:#FFFFFF;
+    --surface-2:#E7E9E4;
+    --ink:#1C2A27;
+    --ink-2:#47574F;
+    --ink-3:#6E7E77;
+    --rule:#D3D7CF;
+    --rule-2:#BFC5BB;
+    --accent:#2C6355;
+    --accent-soft:#E3ECE8;
+    --flag:#94422F;
+    --flag-soft:#F5E7E2;
+    --ask:#7A5E1F;
+    --ask-soft:#F1EBDA;
+
+    --serif:"Newsreader",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+    --mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#141918;
+      --surface:#1B2222;
+      --surface-2:#232B2A;
+      --ink:#E7EAE6;
+      --ink-2:#AEB9B4;
+      --ink-3:#87938E;
+      --rule:#2E3837;
+      --rule-2:#3D4847;
+      --accent:#74BFA7;
+      --accent-soft:#1D2F2A;
+      --flag:#E09076;
+      --flag-soft:#31201A;
+      --ask:#CBA860;
+      --ask-soft:#2B2517;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#141918;
+    --surface:#1B2222;
+    --surface-2:#232B2A;
+    --ink:#E7EAE6;
+    --ink-2:#AEB9B4;
+    --ink-3:#87938E;
+    --rule:#2E3837;
+    --rule-2:#3D4847;
+    --accent:#74BFA7;
+    --accent-soft:#1D2F2A;
+    --flag:#E09076;
+    --flag-soft:#31201A;
+    --ask:#CBA860;
+    --ask-soft:#2B2517;
+  }
+
+  *{box-sizing:border-box}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--ground);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    margin:0;
+  }
+  .skip{
+    position:absolute;left:-9999px;top:0;
+    background:var(--accent);color:var(--ground);
+    padding:10px 16px;z-index:10;
+    font-family:var(--mono);font-size:12px;
+  }
+  .skip:focus{left:8px;top:8px}
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding-inline:20px;
+    padding-block:0 96px;
+  }
+
+  header.mast{
+    border-bottom:1px solid var(--rule-2);
+    padding-block:52px 30px;
+  }
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:11.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 20px;
+  }
+  h1{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(2.35rem,6vw,3.7rem);
+    line-height:1.05;
+    letter-spacing:-.02em;
+    margin:0 0 .35em;
+    text-wrap:balance;
+    max-width:24ch;
+  }
+  .standfirst{
+    font-family:var(--serif);
+    font-size:clamp(1.08rem,2.4vw,1.32rem);
+    line-height:1.5;
+    color:var(--ink-2);
+    max-width:62ch;
+    margin:0 0 30px;
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 28px;
+    font-family:var(--mono);
+    font-size:11.5px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--ink-3);
+  }
+
+  .status{
+    background:var(--ask-soft);
+    border-left:3px solid var(--ask);
+    padding:16px 18px;
+    margin-top:40px;
+    font-size:.95rem;
+    line-height:1.55;
+    max-width:74ch;
+  }
+  .status .tag{
+    display:block;
+    font-family:var(--mono);
+    font-size:10.5px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ask);
+    margin-bottom:7px;
+  }
+  .status p{margin:0}
+
+  .cols{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:44px;
+    padding-top:44px;
+  }
+  @media (min-width:1040px){
+    .cols{grid-template-columns:186px minmax(0,1fr);gap:64px}
+  }
+
+  nav.toc{
+    font-family:var(--mono);
+    font-size:11.5px;
+    line-height:1.5;
+    align-self:start;
+  }
+  @media (min-width:1040px){
+    nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 28px)}
+  }
+  nav.toc .toc-label{
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-3);
+    padding-bottom:10px;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:12px;
+  }
+  nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+  nav.toc a{
+    color:var(--ink-2);
+    text-decoration:none;
+    display:grid;
+    grid-template-columns:22px 1fr;
+    gap:6px;
+    border-bottom:none;
+  }
+  nav.toc a:hover{color:var(--accent)}
+  nav.toc .n{color:var(--ink-3)}
+
+  main{min-width:0;max-width:74ch}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  section{padding-block:8px 46px;scroll-margin-top:24px}
+  section + section{border-top:1px solid var(--rule);padding-top:44px}
+
+  h2{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(1.6rem,3.6vw,2.15rem);
+    line-height:1.14;
+    letter-spacing:-.015em;
+    margin:0 0 .5em;
+    text-wrap:balance;
+  }
+  h2 .sn{
+    display:block;
+    font-family:var(--mono);
+    font-size:11.5px;
+    font-weight:400;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:12px;
+  }
+  h3{
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:1.02rem;
+    line-height:1.35;
+    letter-spacing:-.005em;
+    margin:34px 0 .55em;
+  }
+  h4{
+    font-family:var(--mono);
+    font-weight:500;
+    font-size:11.5px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-3);
+    margin:26px 0 .6em;
+  }
+  p{margin:0 0 1.05em;max-width:68ch}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(44,99,85,.35)}
+  a:hover{border-bottom-color:var(--accent)}
+  @supports (color:color-mix(in srgb,red 50%,transparent)){
+    a{border-bottom-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+  }
+  strong{font-weight:600}
+  em{font-style:italic}
+  code,.cite{
+    font-family:var(--mono);
+    font-size:.88em;
+    color:var(--ink);
+    background:var(--surface-2);
+    padding:.08em .34em;
+    border-radius:2px;
+    white-space:nowrap;
+  }
+  ul,ol{margin:0 0 1.15em;padding-left:1.25em;max-width:68ch}
+  li{margin-bottom:.45em}
+  ul{list-style:none;padding-left:0}
+  ul li{position:relative;padding-left:1.1em}
+  ul li::before{
+    content:"";
+    position:absolute;
+    left:1px;top:.68em;
+    width:5px;height:1px;
+    background:var(--rule-2);
+  }
+  ol{list-style:decimal}
+  ol li::marker{font-family:var(--mono);font-size:.85em;color:var(--ink-3)}
+
+  .lede{
+    font-family:var(--serif);
+    font-size:1.13rem;
+    line-height:1.55;
+    color:var(--ink-2);
+  }
+
+  .target{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-left:3px solid var(--accent);
+    padding:22px 24px;
+    margin-bottom:18px;
+  }
+  .target > :last-child{margin-bottom:0}
+  .target-head{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:10px 14px;
+    margin-bottom:12px;
+  }
+  .target-head h3{margin:0;font-size:1.06rem}
+  .target dl{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:0;
+    margin:14px 0 0;
+    border-top:1px solid var(--rule);
+  }
+  .target dt{
+    font-family:var(--mono);
+    font-size:10.5px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-3);
+    padding-top:12px;
+  }
+  .target dd{margin:0 0 12px;font-size:.95rem;line-height:1.55}
+  @media (min-width:640px){
+    .target dl{grid-template-columns:104px minmax(0,1fr);column-gap:20px}
+    .target dt{padding-top:12px}
+    .target dd{padding-top:12px;margin-bottom:0}
+  }
+
+  .pill{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    padding:3px 8px;
+    border-radius:2px;
+    white-space:nowrap;
+    flex:none;
+    border:1px solid var(--rule-2);
+  }
+  .p-high{background:var(--accent-soft);color:var(--accent)}
+  .p-mod{background:var(--ask-soft);color:var(--ask)}
+
+  .flag,.ask{
+    padding:16px 18px;
+    margin:22px 0;
+    font-size:.95rem;
+    line-height:1.55;
+  }
+  .flag{background:var(--flag-soft);border-left:3px solid var(--flag)}
+  .ask{background:var(--accent-soft);border-left:3px solid var(--accent)}
+  .flag > :last-child,.ask > :last-child{margin-bottom:0}
+  .flag .tag,.ask .tag{
+    display:block;
+    font-family:var(--mono);
+    font-size:10.5px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    margin-bottom:7px;
+  }
+  .flag .tag{color:var(--flag)}
+  .ask .tag{color:var(--accent)}
+
+  blockquote{
+    margin:22px 0;
+    padding-left:20px;
+    border-left:2px solid var(--rule-2);
+    font-family:var(--serif);
+    font-size:1.06rem;
+    line-height:1.5;
+    color:var(--ink-2);
+  }
+  blockquote cite{
+    display:block;
+    margin-top:9px;
+    font-family:var(--mono);
+    font-size:11px;
+    font-style:normal;
+    letter-spacing:.06em;
+    color:var(--ink-3);
+  }
+
+  .scroller{overflow-x:auto;margin:22px 0;border:1px solid var(--rule);background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:520px}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.5}
+  thead th{
+    font-family:var(--mono);
+    font-weight:500;
+    font-size:10.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-3);
+    background:var(--surface-2);
+    white-space:nowrap;
+  }
+  tbody tr:last-child td{border-bottom:none}
+  td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .t-tight td,.t-tight th{padding:9px 14px}
+
+  .ladder{display:flex;flex-direction:column;gap:2px;margin:24px 0}
+  .rung{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:4px 18px;
+    padding:14px 16px;
+    background:var(--surface);
+    border:1px solid var(--rule);
+  }
+  @media (min-width:640px){
+    .rung{grid-template-columns:150px minmax(0,1fr) 92px;align-items:baseline}
+  }
+  .rung .lv{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+  .rung .dsc{font-size:.94rem;line-height:1.5}
+  .rung .mv{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
+  .rung.r1{border-left:3px solid var(--flag)}
+  .rung.r2{border-left:3px solid var(--ask)}
+  .rung.r3,.rung.r4{border-left:3px solid var(--accent)}
+  .r1 .mv{color:var(--flag)}
+  .r2 .mv{color:var(--ask)}
+  .r3 .mv,.r4 .mv{color:var(--accent)}
+
+  footer.end{
+    border-top:1px solid var(--rule-2);
+    margin-top:20px;
+    padding-top:26px;
+    font-size:.88rem;
+    color:var(--ink-3);
+    max-width:68ch;
+  }
+  footer.end p{max-width:68ch}
+
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+  @media print{
+    nav.toc{display:none}
+    .cols{display:block}
+    body{background:#fff;color:#000;font-size:11pt}
+    .target,.scroller,.rung{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="wrap">
+
+  <header class="mast">
+    <p class="eyebrow">Legal to Build Beautiful &middot; Working paper</p>
+    <h1>Where the Code Binds</h1>
+    <p class="standfirst">An annotated inventory of building-regulation reform targets for traditional architecture &mdash; sorted by what is actually movable, and stripped of the claims that would get the argument dismantled.</p>
+    <div class="meta">
+      <!-- EDIT BEFORE LAUNCH: add author and institutional attribution -->
+      <span>Working paper</span>
+      <span>September 2026</span>
+      <span>Revision 1</span>
+    </div>
+
+    <div class="status">
+      <span class="tag">Status of this paper</span>
+      <p>This is a working paper published with its research apparatus intact, including the claims it retires and the seven citations it has not yet been able to close. Section&nbsp;10 lists those openly. Corrections and sourcing leads are welcome; provisions cited here move on three-year code cycles and should be re-verified against current editions before use.</p>
+    </div>
+  </header>
+
+  <div class="cols">
+
+    <nav class="toc" aria-label="Contents">
+      <div class="toc-label">Contents</div>
+      <ol>
+        <li><a href="#s1"><span class="n">1</span><span>The framing problem</span></a></li>
+        <li><a href="#s2"><span class="n">2</span><span>Reformability gradient</span></a></li>
+        <li><a href="#s3"><span class="n">3</span><span>Local zoning targets</span></a></li>
+        <li><a href="#s4"><span class="n">4</span><span>Model-code targets</span></a></li>
+        <li><a href="#s5"><span class="n">5</span><span>Federal regulation</span></a></li>
+        <li><a href="#s6"><span class="n">6</span><span>Three best arguments</span></a></li>
+        <li><a href="#s7"><span class="n">7</span><span>The evidence base</span></a></li>
+        <li><a href="#s8"><span class="n">8</span><span>Counter-case</span></a></li>
+        <li><a href="#s9"><span class="n">9</span><span>Claims to retire</span></a></li>
+        <li><a href="#s10"><span class="n">10</span><span>Open citations</span></a></li>
+      </ol>
+    </nav>
+
+    <main id="main">
+
+      <section id="s1">
+        <h2><span class="sn">Section one</span>The framing problem</h2>
+
+        <p class="lede">The strongest version of this argument is narrower than the version in circulation &mdash; and the narrow version is far more useful, because it points at provisions that can actually be changed.</p>
+
+        <p>Start with a small door. A homeowner in an old house notices that the basement door is narrower and more charming than anything in new construction, and concludes that the building code must have outlawed it. The code did not. The IRC does not regulate interior door widths in a single-family house. It regulates the <em>main egress door</em>, which must give 32 inches of clear width (<code>IRC R311.2</code>), and doors on an accessible route in buildings the Fair Housing Act covers &mdash; four or more units. A basement door in an owner-occupied house is governed by neither. If the door is legal and charming and new houses do not have doors like it, the code is not the reason. Cost, plan layout, and stock door sizes are the reason.</p>
+
+        <p>That pattern recurs. Roughly a dozen widely repeated claims about codes and beauty turn out to be wrong, inverted, or attached to the wrong provision. Section&nbsp;9 lists them. Three deserve mention up front because they are the ones most likely to appear in a draft:</p>
+
+        <ul>
+          <li><strong>Energy codes do not cap traditional window proportions.</strong> The prescriptive window-to-wall ratio limit (<code>IECC C402.4.1</code>, 30&ndash;40%) is a whole-building average, and traditional street elevations sit comfortably under it. The cap targets all-glass curtain wall. Attacking it means arguing against a provision that <em>favors</em> punched openings in solid wall.</li>
+          <li><strong>Codes do not ban masonry ornament.</strong> Brick, stone, terra cotta, cast stone and cement plaster are noncombustible. <code>IBC Ch. 14</code> limits only <em>combustible</em> wall coverings. Nothing limits the quantity, height or profile of masonry ornament. The binding constraints there are labor cost and seismic anchorage.</li>
+          <li><strong>Zoning often subsidizes the pitched roof.</strong> Chicago measures a gable to the mean height between eaves and ridge, and a flat roof to the top-floor ceiling joist (<code>Mun. Code 17-17-0311-A</code>) &mdash; so cornice and parapet cost nothing. New York pays a 10-foot ridge bonus for a pitched roof (<code>ZR 23-421</code> vs. <code>23-422</code>).</li>
+        </ul>
+
+        <div class="flag">
+          <span class="tag">Why this matters strategically</span>
+          <p>Every one of those three claims is the kind of thing an architect or code official will correct in public, and the correction discredits the rest of the argument along with it. The claims that survive scrutiny are more specific, and several are genuinely underexploited &mdash; nobody is currently pushing on them.</p>
+        </div>
+      </section>
+
+      <section id="s2">
+        <h2><span class="sn">Section two</span>The reformability gradient</h2>
+
+        <p>Regulation sits in four tiers, and the tier determines whether an ask is worth writing. The most common error in beauty-and-codes advocacy is spending effort on the immovable tier while ignoring the movable one.</p>
+
+        <div class="ladder">
+          <div class="rung r1">
+            <span class="lv">Federal statute</span>
+            <span class="dsc">Fair Housing Amendments Act design rules, <code>42 U.S.C. 3604(f)</code>. D.C. Height Act, <code>D.C. Code 6-601.05</code>. Congress only.</span>
+            <span class="mv">Immovable</span>
+          </div>
+          <div class="rung r2">
+            <span class="lv">Federal regulation</span>
+            <span class="dsc">ADA elevator trigger, HUD safe harbors, historic-determination procedure. Agency rulemaking &mdash; and essentially nobody is trying.</span>
+            <span class="mv">Moderate</span>
+          </div>
+          <div class="rung r3">
+            <span class="lv">Model code</span>
+            <span class="dsc">IBC, IRC, IECC, ICC A117.1. Three-year consensus cycle. Demonstrably movable &mdash; single-stair reform won in May 2026.</span>
+            <span class="mv">High</span>
+          </div>
+          <div class="rung r4">
+            <span class="lv">Local zoning</span>
+            <span class="dsc">Height measurement, permitted obstructions, FAR exclusions, setbacks, parking. Easiest tier, least exploited, with copyable existing models.</span>
+            <span class="mv">Highest</span>
+          </div>
+        </div>
+
+        <p>There is one structural complication worth understanding before drafting anything about accessibility. <code>24 CFR 100.205(e)</code> conditions each HUD safe harbor on a state adopting the IBC's accessibility provisions <em>without modification</em>, and <code>100.205(h)</code> says state or local compliance findings "are not conclusive" in federal enforcement. A state that liberalized its code would strip its own builders of the safe harbor and expose them to private suits and DOJ action. So accessibility reform cannot be done at the state level at all &mdash; it is federal or nothing.</p>
+      </section>
+
+      <section id="s3">
+        <h2><span class="sn">Section three</span>Local zoning &mdash; the highest-yield targets</h2>
+
+        <p>This tier is where a policy shop can get wins, because the models already exist in American cities and can simply be copied. The ask in each case is narrow enough to draft as model ordinance language.</p>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Height measured in feet, with no cornice or roof allowance</h3>
+            <span class="pill p-high">Local</span>
+          </div>
+          <p>An absolute cap in feet forces a choice between adequate floor-to-ceiling height and the number of stories. A 25-foot cap (NYC R4B) divides into two stories at 12&prime;6&Prime; or three at 8&prime;4&Prime; &mdash; and after the structural and mechanical sandwich, the three-story option yields about seven feet clear. A traditional 14-foot principal floor over three 10-foot floors is 44 feet of <em>occupied</em> height before any roof, cornice or parapet.</p>
+          <dl>
+            <dt>Aesthetic effect</dt>
+            <dd>Compressed floor heights; cornice and parapet eat rentable envelope; no piano nobile.</dd>
+            <dt>Rationale</dt>
+            <dd>Contextual scale control; predictable neighborhood massing.</dd>
+            <dt>The ask</dt>
+            <dd>Adopt Chicago's measurement datum: gable, hip, mansard and gambrel roofs measured to the mean height between eaves and ridge; flat roofs measured to the underside of the top-floor ceiling joist. This preserves the scale control while making the roof assembly, cornice and parapet free.</dd>
+            <dt>Model</dt>
+            <dd>Chicago <code>17-17-0311-A</code>. NYC <code>ZR 23-421</code> for the pitched-roof bonus.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Permitted-obstruction lists that omit cornices, steeples and dormers</h3>
+            <span class="pill p-high">Local</span>
+          </div>
+          <p>This is the precise, defensible version of the "zoning bans cornices" claim. New York's permitted-obstruction list (<code>ZR 23-411</code>, <code>23-412</code>) allows awnings, building columns, chimneys, flagpoles, aerials, parapets to four feet, railings, skylights, solar and vegetated roofs. What it does <em>not</em> list: cornices; spires, steeples, belfries and cupolas; pediments; any parapet above four feet; and dormers on anything but a detached or semi-detached one- or two-family house.</p>
+          <dl>
+            <dt>Aesthetic effect</dt>
+            <dd>Every inch of a six-foot cornice-and-parapet composition above four feet comes out of rentable envelope. A rowhouse row cannot use the dormer allowance at all.</dd>
+            <dt>The ask</dt>
+            <dd>Add cornices, entablatures, pediments, cupolas, spires and steeples to the permitted-obstruction list; raise the parapet allowance; extend the dormer allowance to attached and small multifamily buildings.</dd>
+            <dt>Model</dt>
+            <dd>Chicago's setback encroachment table <code>17-17-0309</code> already exempts "sills, belt courses, cornices, buttresses and other architectural features projecting no more than 3 feet." Same drafting logic, applied vertically.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>FAR measured to exterior wall faces</h3>
+            <span class="pill p-high">Local</span>
+          </div>
+          <p>NYC <code>ZR 12-10</code> measures floor area "from the exterior faces of exterior walls," so wall thickness is chargeable. Done honestly, the penalty is: on a 25&times;50-foot freestanding footprint, 16-inch solid masonry loses 119 sq ft per floor against a 6-inch stud wall &mdash; <strong>9.5% of gross</strong>. For an attached rowhouse, where party walls are measured to their centerline, only the front and rear walls thicken: <strong>3.3%</strong>.</p>
+          <dl>
+            <dt>Aesthetic effect</dt>
+            <dd>A structural penalty on thick walls, deep reveals, and window seats.</dd>
+            <dt>The ask</dt>
+            <dd>Adopt a "qualifying exterior wall thickness" exclusion. New York already has one, doing double duty as a floor-area exclusion and a permitted obstruction above the height limit.</dd>
+            <dt>Honesty note</dt>
+            <dd>State the 3&ndash;9.5% range, not a bigger number, and concede it is zero wherever height, lot coverage or unit count is the binding constraint. This is worth fixing but it is <em>not</em> why solid masonry is rare.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Front setbacks and side-yard rules that forbid the street wall</h3>
+            <span class="pill p-high">Local</span>
+          </div>
+          <p>Chicago's RT and RM multifamily districts require a front setback of "15 feet or 12% of lot depth, whichever is less" (<code>17-2-0305</code>), unobstructed ground-to-sky. The RS averaging rule locks in whatever setback the automobile era produced. Side yards (<code>17-2-0309</code>) require 20% of lot width in RS3 and the RT/RM series, with attachment legalized only where <em>existing</em> attached buildings are present. On a 25-foot lot that leaves a 20-foot house with two dead side slots &mdash; the geometry that produces the detached skinny house instead of the party-wall row.</p>
+          <dl>
+            <dt>The ask</dt>
+            <dd>Permit zero-lot-line attachment by right in multifamily districts; replace setback averaging with a build-to line; add open porches and balconies to permitted front-setback encroachments (Chicago currently allows them only in the rear &mdash; the front porch, the most characteristic element of American vernacular housing, is not a permitted front-setback encroachment).</dd>
+            <dt>Counterexample</dt>
+            <dd>NYC <code>ZR 23-431</code> <em>compels</em> a street wall &mdash; 70% of aggregate frontage within eight feet of the street line &mdash; and budgets three-foot bay projections over up to half the street wall. Contextual urban zoning refutes the blanket claim that zoning outlaws street walls, and gives you a working model.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Parking minimums</h3>
+            <span class="pill p-high">Local / state</span>
+          </div>
+          <p>The strongest built-form evidence in the file. ECONorthwest modeling across 19 Colorado counties found fully flexible parking would yield <strong>41% more homes</strong> in census urban areas and <strong>71% more</strong> in transit areas &mdash; two to three times the effect of legalizing ADUs and transit-adjacent multifamily combined. Emily Hamilton's Houston work states the geometric problem cleanly: parking requirements make it "difficult to build more than two units on the 50&times;100-foot lots that are common within the I-610 Loop."</p>
+          <dl>
+            <dt>Aesthetic effect</dt>
+            <dd>Podium and tuck-under parking raise the ground floor into a blank garage base. Manville: strip malls and office parks are "the cheapest way to meet parking requirements."</dd>
+            <dt>Honesty note</dt>
+            <dd>Abolition is not the same as zero parking. In Buffalo, 83% of post-reform projects still built parking and total provision fell only about 20%. Nothing in the Buffalo, Seattle or Colorado evidence speaks to ground-floor treatment or fenestration &mdash; <strong>parking reform does not produce shopfronts.</strong> Do not claim it does.</dd>
+          </dl>
+        </div>
+
+        <div class="ask">
+          <span class="tag">The Houston lesson</span>
+          <p>Houston cut minimum lot size from 5,000 to 3,500 sq ft inside I-610 in 1998 and citywide in 2013, and got nearly <strong>80,000 small-lot houses</strong> and what Hamilton calls "a vernacular architecture of houses taller than they are wide." Minneapolis 2040 ended single-family zoning in December 2018 and produced <strong>104 duplex and triplex units in two years</strong>. California SB&nbsp;9 produced fewer than 500 successful applicants statewide by May 2024; Los Angeles approved zero of 28 lot-split applications in 2022. The difference is fee-simple houses on small lots with permissive height and setbacks, versus condominium triplexes. Upzoning without small-lot fee-simple economics produces almost nothing.</p>
+        </div>
+      </section>
+
+      <section id="s4">
+        <h2><span class="sn">Section four</span>Model-code targets</h2>
+
+        <h3>The egress geometry that produces the flat 200-foot elevation</h3>
+
+        <p>Five provisions compound. Above the third story, Group R-2 needs two exits (<code>IBC 1006.3.4</code>, Table 1006.3.4(1)). Those exits must sit apart by half the plan's maximum diagonal, or one-third when sprinklered (<code>1007.1.1</code>). On a compact plan &mdash; the natural shape for a small infill lot &mdash; one-third of the diagonal is a large fraction of building width, so two stairs plus the path between them consume an intolerable share of the floor plate.</p>
+
+        <p>So the plan stretches, and stretching is doubly rewarded: elongation makes diagonal separation trivial, and <code>1007.1.1</code> Exception&nbsp;1 lets separation be measured <em>along a rated corridor</em> rather than as a straight line. The corridor is then locked at 44 inches (<code>Table 1020.3</code>, or 36 inches where occupant load is under 50) and topologically constrained by <code>1020.5</code> &mdash; no pockets deeper than 20 feet, 50 feet sprinklered. To amortize it, units load both sides, which makes them single-aspect, caps unit depth, pushes bedrooms inboard, biases the mix to studios and one-bedrooms, and leaves the corridor windowless. One bay module repeated along a 150&ndash;200-foot facade produces the elevation everyone complains about.</p>
+
+        <div class="flag">
+          <span class="tag">Do not overstate this</span>
+          <p>HUD's own <em>Cityscape</em> analysis &mdash; published by the reform movement &mdash; attributes only about <strong>7% of floor area to the second stair and 2% to its corridor</strong>. Parking minimums, lot-assembly economics, height-and-area limits and the 85% efficiency ratio all push the same direction. Egress rules shape the typology; they do not single-handedly cause it.</p>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Single-exit reform &mdash; already won</h3>
+            <span class="pill p-high">Model code</span>
+          </div>
+          <p>The Center for Building's proposal E24-24 was rejected in April 2024, approved as modified in October 2024, sustained at the April 2026 public comment hearing, and approved in the online governmental consensus vote in May 2026. <strong>The 2027 IBC will permit four-story single-exit R-2</strong>, subject to new <code>1006.3.4.2</code>: net floor area no more than 4,000 sq ft per floor, elevators must not open into the stairway, manual alarm plus automatic smoke detection in common spaces, NFPA 13 stairway head locations regardless of construction type, and no electrical receptacles in the stair.</p>
+          <dl>
+            <dt>Why it matters</dt>
+            <dd>The point-access block &mdash; two to four units per landing, dual-aspect, stair on an exterior wall with a window &mdash; is the traditional European apartment typology, and it is what the two-stair rule forecloses.</dd>
+            <dt>Reframe</dt>
+            <dd>NFPA 101 and NFPA 5000 have permitted four-story single-stair apartment buildings for years. The 2027 IBC change <em>converges the IBC on NFPA's long-standing position</em> rather than breaking new ground &mdash; a disarming point worth making.</dd>
+            <dt>Counter-evidence</dt>
+            <dd>A joint IAFF and Metropolitan Fire Chiefs statement (June 2024) objects that departments lack personnel to evacuate elevated floors via one stair, and that with one stairway firefighters cannot separate occupant egress from suppression. Their sharpest point applies directly to the 2027 text: where the single exit is an <em>exterior</em> stair, several compensating mitigations are "either impossible to achieve or expressly exempt," and the adopted language imposes no construction-type limit.</dd>
+            <dt>Weak point</dt>
+            <dd>Fire services do not record fatalities by number of exits per building. There is no direct dataset for Seattle, New York or Honolulu. The defensible claim is negative and jurisdictional: Seattle has permitted six-story single-stair since 1977 without major incident.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Combustible trim, cornices and bay windows</h3>
+            <span class="pill p-mod">Model code</span>
+          </div>
+          <p>Two rules here are sharper than the ones usually cited. <code>IBC 1405.1.2</code>: combustible wall coverings along the top of exterior walls "shall not extend over or above the top of the exterior wall" &mdash; which directly forbids the projecting, self-supporting crowning cornice in combustible material. <code>1405.1.3</code>: the space behind a furred-out covering may not exceed 1&frac58; inches without fireblocking, which kills deep built-up wood entablatures.</p>
+          <dl>
+            <dt>Also binding</dt>
+            <dd><code>1405.1.1</code> caps combustible cladding at 40 feet above grade (60 with fire-retardant-treated wood) &mdash; precisely where a traditional building wants its main cornice. The famous 10% area cap applies only where fire separation distance is five feet or less. <code>705.2.4</code>: the wood oriel &mdash; the defining element of Boston, San Francisco and Chicago bay-front streets &mdash; is permitted in FRTW only up to three stories. <code>603.1(9)</code>: the wood shopfront surround is legal only in the bottom 15 feet.</dd>
+            <dt>Hardest rule</dt>
+            <dd><code>Table 705.2</code>: at a fire separation distance under two feet &mdash; the normal urban condition &mdash; <strong>projections are not permitted at all.</strong> No cornice, no eave, no belt course beyond the wall plane. And <code>Table 705.8</code>: at a true zero-lot-line party wall, no windows of any kind. That is why contemporary infill is blank on the flanks while historic rowhouses have side windows and light courts.</dd>
+            <dt>Note</dt>
+            <dd>Sprinklers relieve a great deal: Table 705.8 roughly doubles to triples allowable glazing, and <code>705.2.3.1</code> exceptions remove both the rating requirement and the 50%-of-perimeter limit for balconies. FRTW is a real and generous allowance running through five separate provisions.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Window U-factors and the true divided lite</h3>
+            <span class="pill p-mod">Model code</span>
+          </div>
+          <p>This is the strongest fenestration argument, and it is not about window size. <code>2021 IECC Table C402.4</code> caps fixed vertical fenestration at U-0.36 in climate zones 4&ndash;5, 0.34 in CZ6, 0.29 in CZ7; the 2024 edition tightens CZ4 to 0.32. Clear single glazing is about U-1.0. <strong>Single glazing is prescriptively impossible in climate zones 3 through 8.</strong></p>
+          <dl>
+            <dt>Aesthetic effect</dt>
+            <dd>True divided lites in the historical sense &mdash; small panes of single glass in slender putty-glazed wood or steel muntins &mdash; cannot be built prescriptively. The damage is done by whole-product rating: <code>C303.1.3</code> requires NFRC whole-assembly rating, so a sash with many small lites carries a high frame-and-divider fraction and a worse rated U-factor. The code pushes directly toward fewer, larger lites and heavier frames. Muntins go from the Georgian &frac12;&Prime;&ndash;&frac58;&Prime; profile to roughly &frac78;&Prime;&ndash;1&frac14;&Prime;. Steel windows are hardest hit.</dd>
+            <dt>The ask</dt>
+            <dd>An alternative compliance path for true divided lites, or recognition of vacuum insulating glass, which delivers single-pane thickness at insulated-glass U-factors and is the most plausible technical route to code-compliant divided lites and slim steel sash.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Thermal bridging &mdash; the provision that names traditional details</h3>
+            <span class="pill p-mod">Model code</span>
+          </div>
+          <p>New in the 2024 IECC: <code>C402.7</code> regulates thermal bridges in above-grade walls. <code>C402.7.1</code> &mdash; "Balconies and concrete floor decks shall not penetrate the building thermal envelope." <code>C402.7.2</code> requires cladding support elements to be offset so insulation passes behind them, which <em>directly regulates the continuous steel shelf angle carrying brick at each floor line</em>. <code>C402.7.5</code> requires parapet insulation up both faces. ASHRAE 90.1-2022 <code>5.5.5</code> expressly names "shelf angles" as linear thermal bridges.</p>
+          <dl>
+            <dt>Quantified</dt>
+            <dd>RDH research: masonry ties cut insulation effectiveness 5&ndash;8%; direct-attached shelf angles cut effective R-value 40&ndash;55%. Payette's infrared survey of 15 buildings found assemblies "typically in the order of 50% less effective" than modeled.</dd>
+            <dt>Honesty notes</dt>
+            <dd>Projecting <strong>wood</strong> eaves, cornices and brackets are largely exempt under C402.7's conductivity threshold &mdash; do not claim codes ban projecting eaves. Deep window reveals are <em>not</em> banned: an R-3 return or a 1&frac12;-inch wood buck is expressly allowed. And mass walls already get a lower R-value requirement than frame walls in every climate zone, so "the code ignores thermal mass" is false.</dd>
+            <dt>The real constraint</dt>
+            <dd>Continuous insulation does not outlaw masonry; it outlaws <em>uninsulated single-leaf</em> masonry. The loss is the wall whose structure, exterior finish and interior finish are one thing &mdash; because the cavity path converts load-bearing masonry into four-inch veneer on a backup wall, and veneer cannot cantilever, so corbelling, rustication, quoins and projecting cornices all need steel armature.</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section id="s5">
+        <h2><span class="sn">Section five</span>Federal regulation &mdash; moderate difficulty, nobody trying</h2>
+
+        <p>This is the most neglected tier. Three asks are administratively feasible and would not require Congress.</p>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Raise the ADA elevator trigger</h3>
+            <span class="pill p-mod">DOJ rulemaking</span>
+          </div>
+          <p><code>2010 ADA Standards 206.2.3</code> Exception&nbsp;1 exempts private buildings "less than three stories or that have less than 3000 square feet per story" from the requirement that an accessible route connect stories. This exception is why two-story main-street commercial blocks and storefront-with-flat-above buildings remain buildable at all.</p>
+          <dl>
+            <dt>The ask</dt>
+            <dd>Raise the trigger to four stories, or above 3,000 sq ft per story. This is the highest-leverage accessibility-side change available for small-scale traditional urbanism.</dd>
+            <dt>Feasibility</dt>
+            <dd>The Attorney General already has authority under <code>42 U.S.C. 12183(b)</code>; the exception itself contemplates "another type of facility as determined by the Attorney General." This is a regulatory change, not a statutory one.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>Streamline historic determinations &mdash; the ramp problem</h3>
+            <span class="pill p-mod">DOJ / ACHP / NPS</span>
+          </div>
+          <p>Here is the causal chain that produces bolted-on ramps. <code>28 CFR 36.403(g)(2)</code> puts the accessible entrance first in priority for the 20%-of-alteration-cost path-of-travel budget. The cheapest thing satisfying that on a raised historic building is a surface-mounted ramp. And the historic-relief provisions &mdash; <code>2010 Standards 202.5</code> and <code>28 CFR 36.405</code> &mdash; are <strong>not self-executing</strong>: they require an affirmative SHPO or ACHP determination that costs time and money. So owners default to the ramp.</p>
+          <dl>
+            <dt>The ask</dt>
+            <dd>A streamlined or presumptive historic-determination process. This changes the default from "bolt-on ramp" to "designed integration" without weakening the access requirement &mdash; which is what makes it politically survivable.</dd>
+          </dl>
+        </div>
+
+        <div class="target">
+          <div class="target-head">
+            <h3>A new HUD safe harbor for the raised entrance</h3>
+            <span class="pill p-mod">HUD notice</span>
+          </div>
+          <p>The stoop argument needs care, because the record does not support the version people want to make. Here is what holds: HUD's <em>Design Manual</em> treats a walk as a ramp once its slope exceeds 5%, and slopes above 8.33% cannot be part of an accessible route. A Brooklyn brownstone stoop rises four to six feet to the parlor floor. At 1:12 a five-foot rise needs <strong>60 feet of ramp run</strong> plus intermediate landings and handrails. On a 20&ndash;25-foot lot that geometry does not fit, and on a flat urban site the site-impracticality tests are unavailable as a matter of arithmetic. The only compliant resolution is to eliminate the rise.</p>
+          <dl>
+            <dt>The ask</dt>
+            <dd>A new safe harbor under <code>24 CFR 100.205(e)(3)</code> &mdash; a Federal Register notice with 30-day comment &mdash; recognizing a raised principal entrance paired with a compliant at-grade or ramped secondary entrance on urban infill lots. This is the only administrative route to the stoop.</dd>
+            <dt>Four qualifications</dt>
+            <dd><strong>(1)</strong> FHA duties attach only at four or more units. A new rowhouse, Philadelphia trinity, Chicago two-flat or Boston triple-decker can legally be built today with a full raised stoop. <strong>(2)</strong> "Multistory dwelling units in buildings without one or more elevators are not covered by the Fair Housing Act" &mdash; so a twelve-unit building of attached two-story townhouses with no elevator has <em>zero</em> covered units. <strong>(3)</strong> Podium parking, slab-on-grade economics, FAR, and ground-floor retail requirements all mandate the flat at-grade street wall independently. <strong>(4)</strong> Flood code pushes the opposite way &mdash; <code>IBC 1612</code> and ASCE 24 require elevation above the design flood elevation, and raised entries are alive and well in exactly those places.</dd>
+            <dt>Provenance</dt>
+            <dd>Extensive searching found abundant writing on the stoop's social function and on FHA compliance, but <strong>no source connecting the two.</strong> The chain above is sound as a reading of the regulations but it is original analysis, not received wisdom, and it is offered as such. And never say "the ADA killed the stoop": the ADA does not apply to private residential dwelling units.</dd>
+          </dl>
+        </div>
+
+        <div class="flag">
+          <span class="tag">Where not to spend effort</span>
+          <p>Amending <code>42 U.S.C. 3604(f)(3)(C)</code> or <code>(f)(7)</code> requires Congress, and the politics are prohibitive. Do not build the ask around it. Note also that <code>3604(f)(8)</code> preserves stricter state law &mdash; federal accessibility law is a floor, never a ceiling.</p>
+        </div>
+
+        <h3>One monumental-architecture item worth naming</h3>
+        <p>The single largest visible imposition of accessibility law on monumental exterior architecture is the ramp geometry at a raised portico. <code>ADA 405</code> caps rise at 30 inches per run, requires 60&times;60-inch landings at changes of direction, handrails both sides with 12-inch extensions, and edge protection. A classical portico on a five-foot podium needs 60 feet of ramp run and, as a switchback, roughly a 22&times;14-foot apparatus. It cannot be hidden. Separately, <code>IBC 1015.3</code> sets guard height at 42 inches minimum wherever a walking surface is more than 30 inches above grade &mdash; so on a raised classical terrace the guard crosses the base of the columns and reads as a fence. <strong>The 42-inch guard is model code and state-amendable, and the existing-building codes already give historic relief &mdash; a materially more reformable target than anything in the FHA.</strong></p>
+      </section>
+
+      <section id="s6">
+        <h2><span class="sn">Section six</span>The three strongest arguments</h2>
+
+        <h3>1. The energy&ndash;fire code interaction, not either alone</h3>
+        <p>The IECC's continuous-insulation requirements push designers toward <em>foam</em> insulation. Foam trips <code>IBC 2603.5</code> and <code>2603.5.5</code> at <em>any height</em> in Type I&ndash;IV construction, which forces NFPA 285 compliance. And because NFPA 285 tests the whole <em>assembly</em> rather than components, and passing assemblies are proprietary and listed in no public directory &mdash; unlike the thousands of fire-resistive assemblies in the UL, FM Global and Intertek directories &mdash; a designer cannot compose a novel wall build-up. They must copy a manufacturer's tested stack-up exactly: substrate, barrier, adhesive, insulation type and thickness, fastener, cavity depth, framing, attachment. A custom traditional build-up has no listing, so the choice is pay for a test or delete the detail. In practice teams delete the detail.</p>
+        <p><strong>Neither code bans traditional detailing. Their interaction makes it uninsurable to draw.</strong> This is the best cross-cutting finding in the file, and it survives expert review because it does not require any single provision to be villainous.</p>
+
+        <h3>2. The asymmetry between restoration and new construction</h3>
+        <p><code>IECC C501.6</code> lets you restore a 1790 single-glazed sash; <code>C503</code> forbids you to build one. <code>ADA 202.5</code> and <code>28 CFR 36.405</code> let a historic portico keep its steps on an affirmative finding; <code>ADA 206.4.1</code> and <code>405</code> forbid a new one. <strong>You may preserve the thing you may not make.</strong> This is the sharpest and most defensible single line available, it needs no contested empirical claim, and it reframes the debate from "codes are too strict" to "codes are incoherent" &mdash; a much easier argument to win.</p>
+
+        <h3>3. The reformability gradient itself</h3>
+        <p>The argument that advocacy has been aimed at the wrong tier. Federal statute is immovable and gets most of the rhetorical attention. Local zoning is the easiest tier, has copyable existing models in Chicago and New York, and is barely contested. Sorting asks by tier is something nobody in this debate is currently doing.</p>
+      </section>
+
+      <section id="s7">
+        <h2><span class="sn">Section seven</span>The evidence base &mdash; handle with care</h2>
+
+        <p>The Broockman&ndash;Elmendorf&ndash;Kalla study is now routinely cited for the claim that "examples of more attractive housing significantly increased support for development, even when construction was far from respondents' own neighborhoods." That reading is defensible, but the citation needs fixes and the framing needs one more.</p>
+
+        <div class="scroller">
+          <table class="t-tight">
+            <thead>
+              <tr><th>Item</th><th>As usually cited</th><th>Correct</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Status</td><td>"recent study"</td><td>Working paper, 12 January 2026, hosted by Niskanen. Not peer-reviewed, no DOI. Say "working paper."</td></tr>
+              <tr><td>Hosting</td><td>SocArXiv preprint</td><td>Also at Niskanen and Yale Tobin. Pre-registered on OSF, IRB approved.</td></tr>
+              <tr><td>Styles tested</td><td>implied architectural preference</td><td><strong>No architectural styles were tested.</strong> No traditional-vs-modern, no ornament manipulation. What varied was architect reputation and three pre-rated photographs.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>What the numbers actually say</h4>
+        <p>All effects are on a 0&ndash;1 rescaled agreement scale, n = 5,999 for the vignettes. In the vignette where the building was <em>always</em> "in a neighborhood across the country," the pretty photograph beat the ugliest by <strong>0.141</strong> and the merely ugly by <strong>0.077</strong>. In the conjoint vignette, an award-winning architect beat an "Aesthetic Atrocity Award" architect by <strong>0.132</strong> &mdash; roughly 2.5 times the pure own-block NIMBY effect of 0.053, and essentially the largest effect in the study. So the claim holds.</p>
+
+        <div class="flag">
+          <span class="tag">Four findings that cut against the beauty thesis</span>
+          <p><strong>Context beats facade.</strong> The largest single coefficient is placing the building among single-family homes: <strong>&minus;0.156</strong>, bigger than the entire pretty-to-ugliest facade gap. A beautiful five-story building in a single-family neighborhood still loses support, and the authors' own headline recommendation is to <em>concentrate density in already-dense areas</em>, not to beautify buildings in low-density ones.</p>
+          <p><strong>The causal experiment is asymmetric and modest.</strong> In the video experiment (n = 12,534), an ugly-buildings prime moved upzoning support only &minus;0.025. A video about <em>homelessness</em> moved it <strong>+0.059</strong> &mdash; more than twice as much, in the pro-housing direction. No "pretty buildings" video was tested. There is no experiment in this literature showing beauty <em>raising</em> support for a real policy.</p>
+          <p><strong>Design review already fails.</strong> The paper notes prior research finding that existing design-review institutions "do not deliver results the public likes" &mdash; and discloses in a footnote that the disliked "Ugly" building <em>satisfied San Francisco's stringent design standards.</em></p>
+          <p><strong>Confounds.</strong> The design manipulations also shifted beliefs about crime, rents and home prices. The authors say those effects are no more than a quarter the size of the attractiveness effect, but concede they cannot fully rule out price inference as a partial driver. And they state plainly that no single finding establishes aesthetic judgment as the operative mechanism.</p>
+        </div>
+
+        <h4>The Harris Poll</h4>
+        <p>The National Civic Art Society survey is fully verifiable and worth citing, with one caveat. Fielded 17&ndash;19 August 2020, n = 2,039 adults, weighted. Headline: <strong>72% preferred a traditional look, 28% modern</strong> (72, not 73). Remarkably flat across party &mdash; Republicans 73%, Democrats 70%, independents 73% &mdash; and flat across education, 72% at both ends. Harris explicitly declines to report a margin of error because it is a non-probability panel. Note the design limit too: a forced binary between curated photo pairs measures preference between two specific buildings, <strong>not support for a style mandate.</strong></p>
+      </section>
+
+      <section id="s8">
+        <h2><span class="sn">Section eight</span>The counter-case, stated at full strength</h2>
+
+        <p>This section exists because the argument will face it, and because the answer determines what a reform program should ask for.</p>
+
+        <blockquote>
+          A style mandate cannot be written as an objective standard, so it must be administered by a review board exercising case-by-case aesthetic judgment &mdash; the exact mechanism that produces San Francisco's one-to-fourteen-year permitting with no relationship to project size, Terner's ~7% design-requirement cost premium plus ~5% for the community meetings it generates, and Glaeser's collapse from 258&ndash;280 new units per census tract to 48 and then to net loss inside historic districts. Because the mandate binds form while budgets stay fixed, the only margin of adjustment is material quality, so it yields thin pastiche rather than the buildings it invokes.
+          <cite>The objection, stated as its strongest proponents would state it</cite>
+        </blockquote>
+
+        <p>Two supporting facts an expert will bring. First, Glaeser's <em>Preservation Follies</em> found that in the 1990s majority-historic census tracts in New York <em>lost</em> 94 units on average, and that average household income in those tracts was 74% above non-district tracts by 2000, a gap that widened from 29% in 1970. Second, Been, Ellen, Gedal, Glaeser and McCabe (2016) found historic designation raises values <em>only outside Manhattan</em>; inside Manhattan districts owners see no greater gain, and effects are more positive "where the option to build unrestricted is less valuable." The policy works where the forgone development option is worthless.</p>
+
+        <p>Also worth knowing: <em>Berman v. Parker</em> (1954) upheld regulation on "physical, aesthetic, and monetary" grounds. Aesthetic regulation is constitutionally permitted. <strong>Drop any First Amendment framing for private buildings</strong> &mdash; the constitutional argument is unavailable to either side, which is precisely why the case has to be economic and institutional.</p>
+
+        <div class="ask">
+          <span class="tag">The resolution the evidence supports</span>
+          <p>Deregulate so that beauty is <em>legal</em>, while declining the adjacent move of making it <em>mandatory</em>. This is not a fudge &mdash; it is what the record shows works. Every verified state pre-approved-plan provision is a permission, not a prescription. And four states in the 2024&ndash;25 wave went the other way and <strong>affirmatively banned aesthetic mandates</strong>: Colorado <code>C.R.S. 29-35-103(2)(c)</code> bars any "restrictive design or dimension standard" requiring an architectural style, material or landscaping; Arizona <code>A.R.S. 9-461.18</code> bars requiring an ADU to match exterior design, roof pitch or finishing materials; Washington's 2SHB 1183 bars facade modulation and upper-level setback requirements; Texas SB&nbsp;15 bars wall articulation requirements on small lots.</p>
+        </div>
+
+        <h3>The proof of concept: South Bend</h3>
+        <p><strong>Build South Bend is the one verified style-specific, design-binding pre-approved plan program in the country</strong>, and it is the right model precisely because it is a menu item rather than a requirement. Nine types, free, reviewed in two business days. The catalog's own language: a section headed "Traditional Design Options"; massing that reflects "a simple vernacular character present throughout South Bend's neighborhoods"; base options with "a gable roof, open eave detail, and simple porch details," and a third concept with "craftsman details with shallow gable roofs, decorative brackets, rafter tails, and a low wall porch." And it binds what it covers: buildings "must be built to match the floor plans and building design, including all architectural details," with three preset facade options per type and an exterior inspection at the end.</p>
+        <p>Compare the control case. Los Angeles's Standard Plan Program publishes criteria that are purely technical &mdash; framing, Title 24, CALGreen, truss details &mdash; with <em>zero words</em> on style, massing, roof form, fenestration or materials. Its approved firms are contemporary prefab brands. <strong>A technical checklist yields a modernist catalog by default.</strong> That contrast is the single most useful pair of examples in this file: style-neutrality is not neutral in outcome, and the fix is an optional traditional lane, not a mandate.</p>
+
+        <p>One more finding to absorb: <strong>zero confirmed instances of a traditional-design pattern book becoming binding law.</strong> The Mississippi Renewal Forum's SmartCodes were adopted in Gulfport and Pass Christian as a <em>parallel option</em>. Louisiana Speaks was advisory. The Katrina Cottage was blocked not by codes but by local officials who feared small permanent units would lower property values. What became law was the form-based code &mdash; and the Form-Based Codes Institute lists "architectural standards" among its <strong>optional</strong> elements, alongside landscaping and signage. Form is the mandatory core; style is a severable bolt-on. Miami 21 is style-neutral in practice: a glass-and-steel building meeting its frontage, height and disposition standards complies.</p>
+      </section>
+
+      <section id="s9">
+        <h2><span class="sn">Section nine</span>Claims to retire</h2>
+
+        <p>Each of these circulates widely and each is a citable error.</p>
+
+        <div class="scroller">
+          <table>
+            <thead>
+              <tr><th>Common claim</th><th>Correction</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Energy codes cap window area and kill traditional proportions</td><td>Inverted. The 30&ndash;40% WWR cap is a whole-building average that traditional elevations sit under; it penalizes curtain wall and rewards punched openings. It bites only on tall storefronts in small buildings.</td></tr>
+              <tr><td>Codes ban masonry ornament</td><td>False. Masonry is noncombustible. Nothing in Ch. 14, 26 or 705 limits the quantity, height or profile of masonry ornament. Cost and seismic anchorage do.</td></tr>
+              <tr><td>Zoning bans cornices and pitched roofs</td><td>Overstated. Chicago measures gables to the mean eave/ridge line and exempts cornices projecting up to 3 ft; NYC pays a 10-ft pitched-roof bonus. The narrow true claim is about permitted-obstruction omissions.</td></tr>
+              <tr><td>Zoning forbids the continuous street wall</td><td>True of suburban-pattern codes, false of contextual urban ones. NYC <code>ZR 23-431</code> <em>compels</em> a street wall for 70% of frontage.</td></tr>
+              <tr><td>The IBC bans single-stair buildings</td><td>False. <code>1006.3.4</code> permits them to three stories, four in the 2027 IBC; R-3 and R-4 are exempt outright. It is a height threshold, not a ban.</td></tr>
+              <tr><td>Six stories is the single-stair reform</td><td>The enacted model-code outcome is <strong>four</strong>, with a 4,000 sq ft floor-plate cap. Arguing for six means arguing beyond the 2027 IBC &mdash; say so if you do.</td></tr>
+              <tr><td>Reform is blocked at the ICC</td><td>No longer true as of May 2026. Credit the win; note the committee's stated motive was partly to forestall legislative end-runs.</td></tr>
+              <tr><td>Egress rules cause the double-loaded slab</td><td>Overstated. HUD attributes ~7% of floor area to the second stair, ~2% to its corridor.</td></tr>
+              <tr><td>The ADA killed the stoop</td><td>Never say this. The ADA does not apply to private residential dwelling units. The FHA does, and only at four-plus units, and not at all to non-elevator multistory units.</td></tr>
+              <tr><td>The 42-inch corridor comes from the ADA</td><td>It is 44 inches and it comes from egress (<code>IBC 1020.3</code>). Accessibility's 36 inches is not binding. Attribute the corridor to fire code.</td></tr>
+              <tr><td>Codes ban projecting eaves</td><td>Not under <code>C402.7</code> &mdash; wood is exempt under the conductivity threshold.</td></tr>
+              <tr><td>The code ignores thermal mass</td><td>False. Mass walls get a <em>lower</em> R-value requirement than frame walls in every climate zone.</td></tr>
+              <tr><td>FAR wall-thickness penalties explain the absence of solid masonry</td><td>The penalty is real but 3.3% attached, 9.5% freestanding, and zero where FAR is not the binding constraint.</td></tr>
+              <tr><td>"X% of our old buildings would be illegal today"</td><td>The circulated Somerville, Cambridge and Seattle percentages could not be traced to any named primary document.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Citation details that will be checked</h4>
+        <ul>
+          <li>Cite the <strong>2021 IBC</strong>. The 2018 numbering is widely reproduced and wrong: single exits are <code>1006.3.4</code>, not <code>1006.3.3</code>; corridor width is <code>1020.3</code>, dead ends <code>1020.5</code>.</li>
+          <li>Dead-end corridors get <strong>50 feet</strong> in sprinklered R-2, not 20. The 20-foot figure is the wrong one for multifamily.</li>
+          <li>There is no <code>ADA 206.2.3.2</code>. <code>206.2.3.1</code> is the only subsection.</li>
+          <li>EO 13967 is at <strong>85 FR 83739</strong> and was revoked by <strong>EO 14018</strong> (24 Feb 2021, 86 FR 11855) &mdash; not by EO 13985 or 13992.</li>
+          <li>The FHA site-impracticality tests live in the Fair Housing Accessibility Guidelines, <strong>56 FR 9472</strong>, not in 24 CFR 100.205(a).</li>
+          <li>California's pre-approved-plan law is <strong>AB 1332</strong> (Gov. Code &sect;65852.27), not AB 434.</li>
+          <li>Washington's SB 5491 was amended down to a <strong>study bill</strong>; it did not legalize single stair. Washington's parking law is SB 5184 (2025), not HB 1110.</li>
+          <li>No dollar figure for NFPA 285 testing appears here. The widely repeated $30k&ndash;$100k range is plausible but unsourced.</li>
+        </ul>
+      </section>
+
+      <section id="s10">
+        <h2><span class="sn">Section ten</span>Open citations</h2>
+
+        <p>Seven items are load-bearing and not yet closed. They are listed here rather than quietly omitted. Leads welcome.</p>
+
+        <div class="scroller">
+          <table class="t-tight">
+            <thead>
+              <tr><th>#</th><th>Item</th><th>Why it matters</th><th>How to close it</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">1</td><td>Moynihan's 1962 Guiding Principles, Principle 1</td><td>EO 13967 claims the 1962 principles "implicitly discouraged" classical design; the text as usually quoted reads "The development of an official style must be avoided." If accurate, the irony is exact &mdash; an order justified as restoring civic beauty establishes the official style the 1962 document forbade.</td><td>gsa.gov returned empty. Needs the 1962 report itself.</td></tr>
+              <tr><td class="num">2</td><td>Miami 21 Art. 5.6 and &sect;3.5</td><td>Whether Miami measures height in stories rather than feet. Widely asserted, unverified &mdash; and it would be a strong model if true.</td><td>Code is served only through a JavaScript viewer.</td></tr>
+              <tr><td class="num">3</td><td>NFPA 285 test cost and lab queue</td><td>The interaction argument in section 6 is stronger with a number.</td><td>Direct quote from Intertek, SwRI or QAI; or ICC Group A reason statements on 2603.5.5.</td></tr>
+              <tr><td class="num">4</td><td>AIA's on-record 2020 and 2025 positions</td><td>Needed for the counter-case. No language is attributed here without it.</td><td>aia.org was unreachable.</td></tr>
+              <tr><td class="num">5</td><td>NJ Rehabilitation Subcode outcome figures</td><td>The circulated 8% / 60% / 83% figures are <em>not</em> in the HUD report's text, and the "Jersey City" attribution is wrong &mdash; the report names Trenton, Newark and Elizabeth.</td><td>NJ DCA's own 1999&ndash;2000 releases.</td></tr>
+              <tr><td class="num">6</td><td>Somerville / Cambridge / Seattle nonconformity percentages</td><td>A staple of this literature and currently unsourced.</td><td>Find the underlying study, or the statistic should be dropped from circulation.</td></tr>
+              <tr><td class="num">7</td><td>ZQA contextual height increases</td><td>The +5 to +15 ft figures and ground-floor easings are not verified against adopted text.</td><td>The adopted ZQA text.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Two smaller notes. The California Historical Building Code is a useful precedent and its two load-bearing citations are solid &mdash; <code>H&amp;S Code 18951</code> (alternative standards to preserve "original or restored architectural elements and features") and <code>18954</code> (every city and county <em>shall</em> apply them; it is mandatory, not optional). Its internal chapter numbering could not be verified, so only the statute is quoted here. And the Form-Based Codes Institute publishes no total count of adopted US codes; the commonly repeated "700+" is unverified.</p>
+      </section>
+
+      <footer class="end">
+        <h4>On method</h4>
+        <p>ICC and up.codes are JavaScript-rendered and could not be read directly. Code text here was verified against ICC-published sample PDFs, jurisdictions that publish their adopted code as PDFs &mdash; chiefly Seattle's 2021 Building Code, which marks state and local amendments so unmarked text is verbatim model IBC &mdash; and expert materials reproducing code language. 2024 IBC section numbers could not be verified at all, which is why this paper cites the 2021 edition throughout.</p>
+        <p>Research assembled September 2026. Provisions change on three-year cycles; re-verify before relying on any citation here.</p>
+        <!-- EDIT BEFORE LAUNCH: confirm this address exists, and add any institutional attribution or disclaimer -->
+        <p>Corrections and sourcing leads: <a href="mailto:corrections@legaltobuildbeautiful.com">corrections@legaltobuildbeautiful.com</a></p>
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

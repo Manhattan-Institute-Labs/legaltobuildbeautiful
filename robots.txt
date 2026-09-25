@@ -1,4 +1,6 @@
-User-agent: *
-Allow: /
+# This is an unverified test document. It should not appear in search results.
+# Remove this file, and change the robots meta tag in index.html to
+# "index, follow", only after the content has been fact-checked.
 
-Sitemap: https://legaltobuildbeautiful.com/sitemap.xml
+User-agent: *
+Disallow: /

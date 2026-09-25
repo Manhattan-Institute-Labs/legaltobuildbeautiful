@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Where the Code Binds</title>
 <meta name="description" content="An annotated inventory of building-code and zoning reform targets for traditional architecture, sorted by what is actually movable.">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 
 <link rel="canonical" href="https://legaltobuildbeautiful.com/">
 <meta property="og:type" content="article">
@@ -170,7 +170,17 @@
     color:var(--ask);
     margin-bottom:7px;
   }
-  .status p{margin:0}
+  .status p{margin:0 0 .8em}
+  .status p:last-child{margin-bottom:0}
+  .status-warn{
+    background:var(--flag-soft);
+    border-left-width:4px;
+    border-left-color:var(--flag);
+  }
+  .status-warn .tag{
+    color:var(--flag);
+    font-size:11.5px;
+  }
 
   .cols{
     display:grid;
@@ -449,19 +459,22 @@
 <div class="wrap">
 
   <header class="mast">
-    <p class="eyebrow">Legal to Build Beautiful &middot; Working paper</p>
+    <p class="eyebrow">Legal to Build Beautiful &middot; Unverified test draft</p>
     <h1>Where the Code Binds</h1>
     <p class="standfirst">An annotated inventory of building-regulation reform targets for traditional architecture &mdash; sorted by what is actually movable, and stripped of the claims that would get the argument dismantled.</p>
     <div class="meta">
       <!-- EDIT BEFORE LAUNCH: add author and institutional attribution -->
-      <span>Working paper</span>
+      <span>Unverified draft</span>
       <span>September 2026</span>
       <span>Revision 1</span>
     </div>
 
-    <div class="status">
-      <span class="tag">Status of this paper</span>
-      <p>This is a working paper published with its research apparatus intact, including the claims it retires and the seven citations it has not yet been able to close. Section&nbsp;10 lists those openly. Corrections and sourcing leads are welcome; provisions cited here move on three-year code cycles and should be re-verified against current editions before use.</p>
+    <div class="status status-warn">
+      <span class="tag">Do not cite &mdash; nothing on this page has been verified</span>
+      <p><strong>This is a test document.</strong> It exists to trial a format and a research method. <strong>None of the material on this page &mdash; no code section number, statistic, quotation, date or legal characterisation &mdash; has been independently verified.</strong> It was assembled rapidly with AI assistance and has had no fact-check, no expert review and no institutional clearance.</p>
+      <p>Section&nbsp;10 lists citations <em>known</em> to be unresolved. That list is not a boundary: everything outside it is equally unverified, merely not yet identified as a problem. Treat every claim here as a lead to check, never as a finding.</p>
+      <p><strong>This is not compliance guidance.</strong> Model codes are not law until a jurisdiction adopts them, usually with amendments, and editions change on three-year cycles. Do not use anything here for design, permitting or construction decisions. It is not legal advice.</p>
+      <p>This page is excluded from search indexing and is not an institutional position of any organisation.</p>
     </div>
   </header>
 
@@ -879,7 +892,7 @@
       <section id="s10">
         <h2><span class="sn">Section ten</span>Open citations</h2>
 
-        <p>Seven items are load-bearing and not yet closed. They are listed here rather than quietly omitted. Leads welcome.</p>
+        <p>Nothing in this paper has been independently verified. What follows is narrower: seven items that the drafting process itself flagged as unresolved, load-bearing, and worth someone's time. <strong>Read this as a list of known problems, not as the boundary of the unknown ones</strong> &mdash; every claim outside this table is equally unchecked, merely not yet identified as suspect. Leads welcome.</p>
 
         <div class="scroller">
           <table class="t-tight">
@@ -898,13 +911,14 @@
           </table>
         </div>
 
-        <p>Two smaller notes. The California Historical Building Code is a useful precedent and its two load-bearing citations are solid &mdash; <code>H&amp;S Code 18951</code> (alternative standards to preserve "original or restored architectural elements and features") and <code>18954</code> (every city and county <em>shall</em> apply them; it is mandatory, not optional). Its internal chapter numbering could not be verified, so only the statute is quoted here. And the Form-Based Codes Institute publishes no total count of adopted US codes; the commonly repeated "700+" is unverified.</p>
+        <p>Two smaller notes. The California Historical Building Code is a useful precedent, and the paper leans on two statutory citations &mdash; <code>H&amp;S Code 18951</code> (alternative standards to preserve "original or restored architectural elements and features") and <code>18954</code> (every city and county <em>shall</em> apply them; mandatory, not optional). Its internal chapter numbering could not be traced at all, so only the statute is quoted; the statutory citations themselves still want checking against the code as enacted. And the Form-Based Codes Institute publishes no total count of adopted US codes &mdash; the commonly repeated "700+" has no traceable source and is not used here.</p>
       </section>
 
       <footer class="end">
-        <h4>On method</h4>
-        <p>ICC and up.codes are JavaScript-rendered and could not be read directly. Code text here was verified against ICC-published sample PDFs, jurisdictions that publish their adopted code as PDFs &mdash; chiefly Seattle's 2021 Building Code, which marks state and local amendments so unmarked text is verbatim model IBC &mdash; and expert materials reproducing code language. 2024 IBC section numbers could not be verified at all, which is why this paper cites the 2021 edition throughout.</p>
-        <p>Research assembled September 2026. Provisions change on three-year cycles; re-verify before relying on any citation here.</p>
+        <h4>On method, and its limits</h4>
+        <p>This paper was assembled rapidly with AI assistance &mdash; the searching, the code cross-referencing and the drafting. A human set the scope and made the editorial judgments. There has been <strong>no independent fact-check, no expert review and no institutional clearance</strong>, and the paper is published as a test of the format and the method rather than as a finding.</p>
+        <p>Where code text appears, it was cross-referenced against ICC-published sample PDFs, jurisdictions that republish their adopted code as PDFs &mdash; chiefly Seattle's 2021 Building Code, which marks state and local amendments so that unmarked text should be verbatim model IBC &mdash; and expert materials reproducing code language. ICC's own text and up.codes are paywalled or JavaScript-rendered and could not be read directly. 2024 IBC section numbers could not be traced at all, which is why the 2021 edition is cited throughout. <strong>Cross-referencing against secondary republications is not verification.</strong> It is a reasonable first pass that produces exactly the failure mode you would expect: section numbers that shifted between editions, figures attached to the wrong source, quotations that have drifted from their originals.</p>
+        <p>The process caught roughly a dozen such errors in <em>widely circulated</em> claims about codes and architecture, which is what Section&nbsp;9 is for. It would be naive to assume it caught all of its own. Every section number here is a pointer to check, not a fact to quote.</p>
         <!-- EDIT BEFORE LAUNCH: confirm this address exists, and add any institutional attribution or disclaimer -->
         <p>Corrections and sourcing leads: <a href="mailto:corrections@legaltobuildbeautiful.com">corrections@legaltobuildbeautiful.com</a></p>
       </footer>
